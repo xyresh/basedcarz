@@ -3,6 +3,14 @@
     .tops{
         display: flex;align-items: center;justify-content: center;max-height: 60px;
     }
+    iframe{
+        max-width: 320px;
+    }
+}
+
+
+
+
 /*Light mode automatically*/
 @media (prefers-color-scheme: light) {
     body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
