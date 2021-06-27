@@ -1,13 +1,29 @@
-body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
-h1{text-align:center;font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
-p {text-align:center;font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
-a:not(.basedcar){background: #fff; color: blue; padding: 3px;}
-a:not(.basedcar):hover{color: white; background-color: #000000;  text-decoration:none;}
-.basedcar{background: #fff; color: black; padding: 3px;text-decoration:none; font-size: 32pt; font-family: Arial, Helvetica, sans-serif;}
-.basedcar:hover{color: white; background-color: #000000;  text-decoration:none;}
-li{padding: 5px}
+/*fix the top logo incase of phone screen*/
 @media (min-width: 400px) {
     .tops{
         display: flex;align-items: center;justify-content: center;max-height: 60px;
     }
+/*Light mode automatically*/
+@media (prefers-color-scheme: light) {
+    body {background-color:#ffffff;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;}
+    h1{text-align:center;font-family:Arial, sans-serif;color:#000000;background-color:#ffffff;}
+    p {text-align:center;font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#000000;background-color:#ffffff;}
+    a:not(.basedcar){background: #fff; color: blue; padding: 3px;}
+    a:not(.basedcar):hover{color: white; background-color: #000000;  text-decoration:none;}
+    .basedcar{background: #fff; color: black; padding: 3px;text-decoration:none; font-size: 32pt; font-family: Arial, Helvetica, sans-serif;}
+    .basedcar:hover{color: white; background-color: #000000;  text-decoration:none;}
+    li{padding: 5px}
+}
+/*Dark mode automatic*/
+@media (prefers-color-scheme: dark) {
+
+    body {background-color:#151515;background-repeat:no-repeat;background-position:top left;background-attachment:fixed;color: #ffffff;}
+    h1{text-align:center;font-family:Arial, sans-serif;color:#ffffff;background-color:#151515;}
+    p {text-align:center;font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:normal;color:#ffffff;background-color:#151515;}
+    a:not(.basedcar){background: #151515; color: #ffffff; padding: 3px;}
+    a:not(.basedcar):hover{color: #000; background-color: #fff;  text-decoration:none;}
+    .basedcar{background: #151515; color: #ffffff; padding: 3px;text-decoration:none; font-size: 32pt; font-family: Arial, Helvetica, sans-serif;}
+    .basedcar:hover{color: #151515; background-color: #ffffff;  text-decoration:none;}
+    li{padding: 5px}
+
 }
